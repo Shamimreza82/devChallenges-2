@@ -1,12 +1,23 @@
-/* 
+
+
+section {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
 body {
 
 font-family: 'PT Serif', serif;
 
 }
+h3 {
+    margin-top: 40px;
+}
 
 .container {
     height: 30vh;
+    max-width: 1140px;
     background-color: azure;
     display: flex;
     margin: auto;
@@ -14,70 +25,59 @@ font-family: 'PT Serif', serif;
     gap: 100px;   
 }
 
-h3 {
-    margin-top: 40px;
+.crew-head {
+    font-size: 2.25rem;
+}
+
+/* --------------------------------------- */
+.line-1 img {
+    width: 100%;
 }
 
 
-        /* photo section */
-
-/* .photo-container {
-    height: 100vh;
-    margin: 0 auto;
-    background-color: beige;
+.line-1{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 10rem;
+margin-top: 4rem;
 }
 
 
-.line-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.img-2, .img-5 {
+    padding-top: 100px;
 }
-.line-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+
+.img-text {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.img-4, .img-5, .img-6 {
+    margin-top: -100px;
+}
 
 
-
-              /* small screen */
-
-/* @media screen and (max-width: 576px) {
+@media screen and (max-width:576px) {
+    
     .container {
         flex-direction: column;
+        gap: 0;
     }
-}   */
 
 
+    .line-1 {
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem;
+    }
 
+    .img-4, .img-6 {
+        margin-top: 30px;
+    }
+    .img-3 {
+        margin-top: -100px;
+    }
 
-body {
-
-font-family: 'PT Serif', serif;
-
-}
-
-.container {
-    height: 30vh;
-    width: 70%;
-    background-color: azure;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    gap: 100px;   
-}
-
-h3 {
-    margin-top: 40px;
-}
-
-
-.photo-container {
-    height: 100vh;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2,3fr);
-    justify-content: center;
+    .img-5 {
+        margin-top: -200px;
+    }
 }
