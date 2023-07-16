@@ -9,6 +9,14 @@ section {
 body {
 
 font-family: 'PT Serif', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Space Mono', monospace;
+font-family: 'Work Sans', sans-serif;
 
 }
 h3 {
@@ -50,6 +58,7 @@ margin-top: 4rem;
 .img-text {
     font-size: 2rem;
     margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .img-4, .img-5, .img-6 {
